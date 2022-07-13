@@ -1,10 +1,8 @@
-import * as kanji from "./kanji-ts-because-ts-is-dumb/index";
-
 /** More details
  *
  * And even more details
  *
- * @param package The Kanji package
+ * @param package The id of the package
  *
  * Code links: (Puts Foo inside <code> tags)
  * {@linkcode Package} or [[`Package`]]
@@ -12,11 +10,11 @@ import * as kanji from "./kanji-ts-because-ts-is-dumb/index";
  * @public
  */
 export interface SomePackage {
-  package?: kanji.Package;
+  package?: string;
 }
 
 /**
- * It's some other package. testing again.
+ * It's some other package.
  */
 export interface SomeOtherPackage extends SomePackage {
   name: string;
