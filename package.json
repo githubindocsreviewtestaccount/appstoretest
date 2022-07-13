@@ -1,0 +1,22 @@
+{
+  "name": "appstoretest",
+  "version": "1.0.0",
+  "description": "Hi App Review!",
+  "main": "demo.ts",
+  "repository": "https://github.com/githubindocsreviewtestaccount/appstoretest",
+  "author": "Allotrope, Inc.",
+  "license": "None",
+  "private": false,
+  "dependencies": {
+    "@types/node": "^17.0.35"
+  },
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "test": "node dist/demo.js",
+    "generate": "tsc --init",
+    "dev": "NODE_ENV='development' ts-node start.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.8.2"
+  }
+}
